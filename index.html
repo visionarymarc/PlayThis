@@ -37,6 +37,94 @@
             <a href="#builder" class="hero-button">Build My Playlist</a>
         </section>
 
+    <section id="builder" class="builder">
+
+        <h2>Build Your Playlist</h2>
+        <p>Give PlayThis a few details and we'll build your mix.</p>
+
+        <div class="playlist-form">
+
+            <!-- Playlist vibe -->
+            <label for="vibe">What is the vibe?</label>
+            <select id="vibe">
+                <option value="chill">Chill</option>
+                <option value="party">Party</option>
+                <option value="workout">Workout</option>
+                <option value="late night">Late Night</option>
+                <option value="study">Study</option>
+                <option value="romantic">Romantic</option>
+                <option value="feel good">Feel Good</option>
+                <option value="sad">Sad</option>
+                <option value="throwback">Throwback</option>
+                <option value="road trip">Road Trip</option>
+            </select>
+
+
+            <!-- Music genre -->
+            <label for="genre">Genre</label>
+            <select id="genre">
+                <option value="any">Any Genre</option>
+                <option value="hip hop">Hip-Hop / Rap</option>
+                <option value="r&b">R&B / Soul</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="alternative">Alternative</option>
+                <option value="electronic">Electronic / Dance</option>
+                <option value="country">Country</option>
+                <option value="latin">Latin</option>
+                <option value="afrobeats">Afrobeats</option>
+                <option value="reggae">Reggae</option>
+                <option value="jazz">Jazz</option>
+            </select>
+
+
+            <!-- Favorite artists -->
+            <label for="artists">Artists you like (optional)</label>
+            <input
+                type="text"
+                id="artists"
+                placeholder="Ex: Drake, SZA, Brent Faiyaz"
+            >
+
+
+            <!-- Favorite songs -->
+            <label for="songs">Songs you like (optional)</label>
+            <input
+                type="text"
+                id="songs"
+                placeholder="Ex: Passionfruit, Snooze, Clouded"
+            >
+
+
+            <!-- Playlist size -->
+            <label for="length">Playlist Length</label>
+            <select id="length">
+                <option value="10">10 Songs</option>
+                <option value="20" selected>20 Songs</option>
+                <option value="30">30 Songs</option>
+            </select>
+
+
+            <!-- Generate playlist -->
+            <button id="build-button">Build My Playlist</button>
+
+        </div>
+
+    </section>
+
+    <section id="results" class="results">
+
+        <h2>Your Playlist</h2>
+
+        <p id="playlist-description"></p>
+
+        <div id="playlist-container">
+            <!-- Songs will be added here by JavaScript -->
+        </div>
+
+    </section>
+
+
     </main>
 
     <script src="script.js"></script>
